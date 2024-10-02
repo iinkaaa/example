@@ -1,0 +1,109 @@
+header{
+    margin: 15px;
+    padding: 10px;
+}
+
+main {
+    margin: 15px;
+    padding: 15px;
+}
+
+footer {
+    margin: 0px;
+    padding: 15px 15px 15px 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+table, th, td {
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin: 5px;
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+a.active {
+    color: tomato;
+}
+
+footer {
+    background-color: black;
+    p, a {
+        color: white; 
+    }
+}
+
+h1, h2 {
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    #company_info img {
+        width: 500px;
+    }
+    nav {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        a {
+            font-size: 22px;
+        }
+    }
+    #company_info img {
+        width: 100%;
+    }
+    th, td {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    th, td {
+        font-size: 14px;
+    }
+}

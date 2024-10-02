@@ -1,0 +1,153 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.all-dishes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    background-color: white;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.dish:hover {
+    border: 2px solid tomato;
+}
+
+.dish:hover button {
+    background-color: tomato;
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+.dish .price {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.dish .name {
+    margin-top: 0px;
+    margin-bottom: auto;
+    font-size: 20px;
+}
+
+.dish .weight {
+    color: gray;
+}
+
+.dish button {
+    background-color: #f1eee9;
+    margin-top: 5px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+
+@media (max-width: 800px) {
+    .all-dishes {
+        grid-template-columns: 1fr 1fr;
+    }
+    nav {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    h1, section h2 {
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        a {
+            font-size: 22px;
+        }
+    }
+    .all-dishes {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+#form h2 {
+    text-align: center;
+}
+
+.order-form {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.form-section {
+    width: 35%;
+    margin: 10px 20px;
+}
+
+.form-title {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+.order-form p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background-color: white;
+    cursor: pointer;
+    padding: 5px 25px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .order-form {
+        flex-direction: column;
+    }
+    .form-section {
+        width: 90%;
+    }
+}
